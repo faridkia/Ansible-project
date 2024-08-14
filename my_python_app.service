@@ -7,8 +7,8 @@ ExecStart=/usr/bin/python3 /opt/my_python_app/1.py
 WorkingDirectory=/opt/my_python_app
 Restart=always
 User=root
-StandardOutput=file:/var/log/my_python_app.log
-StandardError=file:/var/log/my_python_app.log
+StandardOutput=journal
+StandardError=journal
 
 [Install]
 WantedBy=multi-user.target
